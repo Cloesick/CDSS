@@ -1,35 +1,29 @@
-// js/include.js - The Final Corrected Version
+// js/include.js - The Final Version for GitHub Pages
 
 document.addEventListener("DOMContentLoaded", function() {
-    // This attribute MUST exist on the <body> tag of every HTML page.
-    // It will be either "./" for index.html or "../" for pages in the /pages/ folder.
-    const pathPrefix = document.body.dataset.pathPrefix || '';
+    // This is the name of your repository. It's the "subdirectory" on GitHub Pages.
+    const repoName = 'CDSS'; 
+    const basePath = `/${repoName}/`;
 
     const loadComponent = (url, placeholderId) => {
         const placeholder = document.getElementById(placeholderId);
-        if (!placeholder) {
-            console.error(`Placeholder with ID "${placeholderId}" not found.`);
-            return;
-        }
+        if (!placeholder) return;
 
         fetch(url)
             .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Network response was not ok for ${url}`);
-                }
+                if (!response.ok) throw new Error(`File not found: ${url}`);
                 return response.text();
             })
             .then(data => {
                 placeholder.innerHTML = data;
             })
             .catch(error => {
-                console.error(`There was a problem fetching ${url}:`, error);
-                placeholder.innerHTML = `<p style="color:red; text-align:center;">Error loading content.</p>`;
+                console.error(`Error loading component: ${error}`);
             });
     };
 
-    // Load all components using the correct relative path based on the body's data attribute
-    loadComponent(`${pathPrefix}header.html`, 'header-placeholder');
-    loadComponent(`${pathPrefix}contact.html`, 'contact-placeholder');
-    loadComponent(`${pathPrefix}footer.html`, 'footer-placeholder');
+    // Load all components using the correct, absolute path from the domain root
+    loadComponent(`${basePath}header.html`, 'header-placeholder');
+    loadComponent(`${basePath}contact.html`, 'contact-placeholder');
+    loadComponent(`${basePath}footer.html`, 'footer-placeholder');
 });
