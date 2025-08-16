@@ -1,16 +1,23 @@
-// js/include.js - The Definitive GitHub Pages Version
+// js/include.js - The Universal Version (Works Locally & on GitHub Pages)
 
 document.addEventListener("DOMContentLoaded", function() {
-    // The name of your repository. This is the base path for all assets.
-    const repoName = 'CDSS';
+    // This logic automatically determines the correct base path
+    let basePath = '';
+    const repoName = 'CDSS'; // Your repository name
+
+    // Check if the site is running on the GitHub Pages server
+    if (window.location.hostname.includes('github.io')) {
+        // If yes, set the base path to include the repository name
+        basePath = `/${repoName}/`;
+    }
+    // If no, basePath remains empty (''), which works for your local server
 
     const loadComponent = (componentName, placeholderId) => {
         const placeholder = document.getElementById(placeholderId);
         if (!placeholder) return;
 
-        // Construct the correct, absolute path from the domain root.
-        // This will always be /CDSS/header.html, /CDSS/footer.html, etc.
-        const url = `/${repoName}/${componentName}`;
+        // Construct the final, correct URL for the component
+        const url = `${basePath}${componentName}`;
 
         fetch(url)
             .then(response => {
@@ -25,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     };
 
-    // Load components using just their file names
+    // Load components using just their simple file names
     loadComponent('header.html', 'header-placeholder');
     loadComponent('contact.html', 'contact-placeholder');
     loadComponent('footer.html', 'footer-placeholder');
