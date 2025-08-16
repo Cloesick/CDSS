@@ -1,0 +1,95 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark background for the body */
+    color: #E5E7EB; /* Light gray text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+}
+
+.hero-bg {
+    background-color: #1F2937; /* A slightly lighter dark shade for the hero */
+}
+.logo-container {
+    
+}
+.logo-text {
+    font-weight: 900;
+    font-size: 1.875rem; /* text-3xl */
+    letter-spacing: -0.025em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.logo-cd { color: #2c3e50; } /* Dark Blue */
+.logo-ss { color: #c0392b; } /* Red */
+
+.gradient-icon {
+    background: linear-gradient(to right, #6366F1, #8B5CF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pricing-card {
+    border: 1px solid #374151;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #6366F1;
+}
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6366F1;
+    transition: width 0.3s ease;
+}
+.nav-link:hover:after {
+    width: 100%;
+}
+.curved-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.curved-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px; /* Adjust height of the curve */
+}
+.curved-divider .shape-fill {
+    fill: #111827; /* Matches the next section's background */
+}
+.service-link {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.5rem;
+}
+.service-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+}
+.page-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+html {
+  scroll-behavior: smooth;
+}
