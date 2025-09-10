@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Company Success",
+    "filename": "..\\images\\carousel\\CompanySuccess.webp",
+    "description": "A business meeting focused on company success and partnerships, featuring the CDSS logo."
+  },
+  {
+    "name": "Google Ranking",
+    "filename": "..\\images\\carousel\\GoogleRanking.webp",
+    "description": "A meeting discussing Google ranking, visitor growth, and conversion funnels, with a presenter."
+  },
+  {
+    "name": "Guy Right PC Left",
+    "filename": "..\\images\\carousel\\GuyRightPCLeft.webp",
+    "description": "An image with a man on the right and a PC on the left (description to be refined based on actual image content)."
+  },
+  {
+    "name": "Lady Right PC Left",
+    "filename": "..\\images\\carousel\\LadyRightPCLeft.webp",
+    "description": "An image with a woman on the right and a PC on the left (description to be refined based on actual image content)."
+  },
+  {
+    "name": "Responsive Webdesign",
+    "filename": "..\\images\\carousel\\Responsive.webp",
+    "description": "A meeting discussing responsive web design, including code snippets and a brand example."
+  },
+  {
+    "name": "SEO Strategy",
+    "filename": "..\\images\\carousel\\SEO.webp",
+    "description": "A meeting focused on SEO strategy, with content, backlinks, local SEO, and social media elements."
+  },
+  {
+    "name": "Social Media Management",
+    "filename": "..\\images\\carousel\\SocialMediaManagement.webp",
+    "description": "A presentation on social media management, featuring the CDSS logo and icons for various platforms."
+  },
+  {
+    "name": "Teamwork",
+    "filename": "..\\images\\carousel\\Teamwork.webp",
+    "description": "An image emphasizing teamwork (description to be refined based on actual image content)."
+  },
+  {
+    "name": "Website Management",
+    "filename": "..\\images\\carousel\\WebsiteManagement.webp",
+    "description": "A meeting discussing website management (description to be refined based on actual image content)."
+  }
+]

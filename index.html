@@ -11,13 +11,13 @@
 
     <meta property="og:title" content="Costa Del Sol Services - Digital Marketing & Web Design">
     <meta property="og:description" content="We build stunning websites that attract customers and drive growth on the Costa del Sol.">
-    <meta property="og:image" content="https://www.your-domain.com/images/social-preview.png"> <meta property="og:url" content="https://www.your-domain.com"> <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.your-domain.com/images/social-preview.webp"> <meta property="og:url" content="https://www.your-domain.com"> <meta property="og:type" content="website">
     <meta property="og:site_name" content="Costa Del Sol Services">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" href="images/cdss reworked.jpg" type="image/png">
-    <link rel="apple-touch-icon" href="images/CDSS-apple-touch-icon.png"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/cdss reworked.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="images/CDSS-apple-touch-icon.webp"> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -38,8 +38,18 @@
         <div class="md:w-5/12 text-center md:text-left mb-10 md:mb-0">
             <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Costa del Sol Services</h1>
             <p class="mt-4 text-lg lg:text-xl text-gray-300">We at Costa del sol services help out clients become the guide of their customers story</p>
-            <img src="images/Person@laptop.png" alt="Digital marketing expert working on a laptop" class="mt-8 rounded-lg shadow-2xl w-full max-w-sm mx-auto md:mx-0">
-        </div>
+<div id="imageCarousel" class="relative mt-8 w-full max-w-sm mx-auto md:mx-0">
+  <div id="carouselImages" class="carousel-images relative overflow-hidden rounded-lg shadow-2xl">
+    </div>
+
+  <button id="prevBtn" class="absolute top-1/2 left-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full opacity-75 hover:opacity-100 focus:outline-none">
+    &#10094; </button>
+  <button id="nextBtn" class="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full opacity-75 hover:opacity-100 focus:outline-none">
+    &#10095; </button>
+
+  <div id="carouselDots" class="flex justify-center mt-4 space-x-2">
+    </div>
+</div>        </div>
         <div class="md:w-7/12 w-full relative">
             <div class="relative w-full">
 
@@ -48,7 +58,7 @@
                         <h2 class="text-xl font-semibold text-indigo-400 mb-4 flex items-center justify-center gap-2"><i class="fas fa-check-circle"></i> General Business Website Clients</h2>
                         <p class="text-2xl md:text-3xl font-extrabold leading-tight">
                             <span class="text-red-400">“Losing customers because your business has no website?</span>
-                            <span class="text-green-400"> We design modern, professional sites that build trust fast—just like we did for dozens of Costa del Sol businesses now booking more clients than ever.”</span>
+                            <span clpac="text-green-400"> We design modern, professional sites that build trust fast—just like we did for dozens of Costa del Sol businesses now booking more clients than ever.”</span>
                         </p>
                     </div>
                 </div>
@@ -119,7 +129,7 @@
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
-                        <img src="images/Responsive.png" alt="Responsive Design Mockup" class="rounded-lg shadow-2xl w-full">
+                        <img src="images/Responsive.webp" alt="Responsive Design Mockup" class="rounded-lg shadow-2xl w-full">
                     </div>
                     <div class="md:w-1/2">
                         <h2 class="text-indigo-400 font-bold text-lg">ABOUT US</h2>
@@ -149,7 +159,7 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold text-white m-0">Don't Just Take Our Word For It</h2>
-                    <img src="images/GoogleMarketplace2.png" alt="Google Marketplace" class="mx-auto mt-4 h-24 w-auto" style="object-fit: contain;">
+                    <img src="images/GoogleMarketplace2.webp" alt="Google Marketplace" class="mx-auto mt-4 h-24 w-auto" style="object-fit: contain;">
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-gray-900 p-8 rounded-lg shadow-lg"><div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-gray-400 mb-6">"Costa del Sol Services did an amazing job helping me fine-tune my webpage and set up effective advertisements..."</p><p class="font-bold text-white">Franciscus. D</p></div>
@@ -168,6 +178,8 @@
 
     <script src="js/main.js"></script>
     <script src="js/include.js"></script>
+    <script src="js/carousel.js"></script>
+
     
 </body>
 </html>
