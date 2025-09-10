@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4YELEJN5E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y4YELEJN5E');
+</script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d6aeef2b-7257-40a1-89ed-36f818018cc3" type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Costa Del Sol Services">
@@ -27,6 +37,7 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-900 text-gray-300">
 
     <div id="header-placeholder"></div>
@@ -38,18 +49,12 @@
         <div class="md:w-5/12 text-center md:text-left mb-10 md:mb-0">
             <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Costa del Sol Services</h1>
             <p class="mt-4 text-lg lg:text-xl text-gray-300">We at Costa del sol services help out clients become the guide of their customers story</p>
-<div id="imageCarousel" class="relative mt-8 w-full max-w-sm mx-auto md:mx-0">
+<div id="imageCarousel" class="relative mt-8 w-full mx-auto md:mx-0" style="max-width: 600px;">
   <div id="carouselImages" class="carousel-images relative overflow-hidden rounded-lg shadow-2xl">
     </div>
-
-  <button id="prevBtn" class="absolute top-1/2 left-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full opacity-75 hover:opacity-100 focus:outline-none">
-    &#10094; </button>
-  <button id="nextBtn" class="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full opacity-75 hover:opacity-100 focus:outline-none">
-    &#10095; </button>
-
   <div id="carouselDots" class="flex justify-center mt-4 space-x-2">
     </div>
-</div>        </div>
+</div>       </div>
         <div class="md:w-7/12 w-full relative">
             <div class="relative w-full">
 
@@ -180,6 +185,43 @@
     <script src="js/include.js"></script>
     <script src="js/carousel.js"></script>
 
-    
+  <div id="cookieConsentPopup" class="cookie-consent-hidden">
+  <div class="cookie-consent-content">
+    <p>
+      This website uses cookies to ensure you get the best experience on our
+      website. We use cookies for analytics and to improve your experience.
+      For more information, please read our
+      <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+    </p>
+    <div class="cookie-consent-buttons">
+      <button id="acceptCookies" class="cookie-consent-btn accept-btn">
+        Accept All Cookies
+      </button>
+      <button id="rejectCookies" class="cookie-consent-btn reject-btn">
+        Reject All Cookies
+      </button>
+      <button id="customizeCookies" class="cookie-consent-btn customize-btn">
+        Customize
+      </button>
+    </div>
+
+    <div id="cookieCustomize" class="cookie-customize-hidden">
+      <h3>Manage your cookie preferences</h3>
+      <label>
+        <input type="checkbox" id="necessaryCookies" checked disabled />
+        Necessary Cookies (Always On)
+      </label>
+      <label>
+        <input type="checkbox" id="analyticsCookies" checked />
+        Analytics Cookies (e.g., Google Analytics)
+      </label>
+      <div class="cookie-consent-buttons">
+        <button id="savePreferences" class="cookie-consent-btn save-btn">
+          Save Preferences
+        </button>
+      </div>
+    </div>
+  </div>
+</div>  
 </body>
 </html>

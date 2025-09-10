@@ -121,3 +121,115 @@ main {
 html {
   scroll-behavior: smooth;
 }
+/* Cookie Consent Popup Styles */
+#cookieConsentPopup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 15px 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's on top of other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%); /* Start hidden */
+}
+
+#cookieConsentPopup.cookie-consent-visible {
+  transform: translateY(0); /* Slide up to be visible */
+}
+
+#cookieConsentPopup.cookie-consent-hidden {
+  display: none; /* Fully hide when not needed */
+}
+
+.cookie-consent-content {
+  max-width: 90%;
+  width: 900px;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.cookie-consent-content p {
+  margin-bottom: 15px;
+}
+
+.cookie-consent-content a {
+  color: #00bcd4; /* Accent color for links */
+  text-decoration: underline;
+}
+
+.cookie-consent-buttons {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+}
+
+.cookie-consent-btn {
+  background-color: #00bcd4; /* Primary button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.cookie-consent-btn:hover {
+  background-color: #00a0b2; /* Darker on hover */
+}
+
+.cookie-consent-btn.reject-btn {
+  background-color: #f44336; /* Red for reject */
+}
+
+.cookie-consent-btn.reject-btn:hover {
+  background-color: #da190b;
+}
+
+.cookie-consent-btn.customize-btn,
+.cookie-consent-btn.save-btn {
+  background-color: #607d8b; /* Grey for customize/save */
+}
+
+.cookie-consent-btn.customize-btn:hover,
+.cookie-consent-btn.save-btn:hover {
+  background-color: #455a64;
+}
+
+/* Cookie Customization Section */
+#cookieCustomize {
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+  text-align: left;
+}
+
+#cookieCustomize h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+#cookieCustomize label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#cookieCustomize input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1); /* Make checkbox slightly larger */
+}
+
+/* Initially hidden state for customization section */
+.cookie-customize-hidden {
+  display: none;
+}

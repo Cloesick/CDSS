@@ -1,0 +1,17 @@
+Get Your Google Analytics 4 Measurement ID:
+
+Go to Google Analytics.
+
+Create a new GA4 property or find your existing one.
+
+Go to Admin > Data Streams > Click on your Web stream.
+
+Copy your "Measurement ID" (it will look like G-XXXXXXXXXX).
+
+Replace Placeholder in JavaScript:
+In the loadGoogleAnalytics function in the JavaScript code above, replace `'YOUR_GA_
+
+
+
+setup Cookies
+tools CookieBot
