@@ -25,8 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     imagesData.forEach((imageData, index) => {
       const img = document.createElement("img");
-      img.src = imageData.filename.replace(/\\/g, "/"); // Normalize backslashes for web paths
-      img.alt = imageData.name;
+const isSubPage = window.location.pathname.includes('/pages/');
+const basePath = isSubPage ? '../' : '';
+
+img.src = basePath + imageData.filename; // <-- The new, smarter line      img.alt = imageData.name;
       img.classList.add("w-full", "h-auto"); // Add responsive classes
       if (index === currentImageIndex) {
         img.classList.add("active");
