@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to load JSON data
   async function loadImages() {
     try {
-      const response = await fetch("../json/WorkSpace.json");
+      const response = await fetch("json/WorkSpace.json");
       imagesData = await response.json();
       renderCarousel();
       startAutoSlide(); // Start auto-sliding after images are loaded
